@@ -13,7 +13,7 @@ int main( )
 {
     if ( const auto session = fc2::get_session(); session.protection != 2 )
     {
-        printf( "[fc2kv-t] this is only for kernel protection" );
+        std::puts( "[fc2kv-t] this is only for kernel protection" );
         return 1;
     }
 
