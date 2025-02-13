@@ -105,6 +105,16 @@ int main( )
                     break;
                 }
 
+                case FC2_TEAM_DRAW_TYPE_CIRCLE: case FC2_TEAM_DRAW_TYPE_CIRCLE_FILLED:
+                {
+                    static bool circle_flag = []
+                    {
+                        std::puts( "[fc2kv-t] circle is not supported in fc2kv" );
+                        return true;
+                    }( );
+                    break;
+                }
+
                 default: break;
             }
         }
